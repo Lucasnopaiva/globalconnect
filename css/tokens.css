@@ -1,0 +1,70 @@
+/* Editorial Monochrome Design: tokens (fonte: references/design-source.md).
+   Não adicione cores, raios nem sombras fora desta lista. */
+:root {
+  /* Cor: paleta fechada (C1) */
+  --color-obsidian: #000000;
+  --color-graphite: #666666;
+  --color-smoke: #8f8f8f;
+  --color-paper: #ffffff;
+  --color-ash: #f1f1f1;
+  --color-hairline: #0000001f;   /* rgba(0,0,0,0.12): toda borda (C4) */
+  --color-whisper: #0000000a;    /* hover de fantasma e seleção */
+
+  /* Cor Adicional de Destaque / Identidade GlobalConnect (Azul Internacional) */
+  --color-brand: #0055ff;
+  --color-brand-hover: #0045d8;
+  --color-brand-subtle: rgba(0, 85, 255, 0.08);
+  --color-brand-border: rgba(0, 85, 255, 0.28);
+  --color-brand-contrast: #ffffff;
+
+  /* Cor Adicional de Destaque: Azul Internacional UNIFOR */
+  --color-brand: #0055ff;
+  --color-brand-hover: #0045d8;
+  --color-brand-subtle: rgba(0, 85, 255, 0.08);
+  --color-brand-border: rgba(0, 85, 255, 0.28);
+  --color-brand-contrast: #ffffff;
+
+  /* Tipografia (T1) */
+  --font-sans: 'OpenAI Sans', 'Inter', 'Söhne', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --text-caption: 13px;   --leading-caption: 1.51;   --tracking-caption: -0.13px;
+  --text-meta: 14px;      --leading-meta: 1.5;       --tracking-meta: -0.14px;
+  --text-input: 16px;     --leading-input: 1.5;      --tracking-input: -0.16px;
+  --text-body: 17px;      --leading-body: 1.65;      --tracking-body: -0.17px;
+  --text-body-lg: 18px;   --leading-body-lg: 1.32;   --tracking-body-lg: -0.18px;
+  --text-subheading: 22px;--leading-subheading: 1.26;--tracking-subheading: -0.22px;
+  --text-heading: 28px;   --leading-heading: 1.21;   --tracking-heading: 0.31px;
+  --text-display: 48px;   --leading-display: 1.16;   --tracking-display: -1.44px;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;  /* somente no heading de 28px (T2) */
+
+  /* Espaçamento: unidade de 4px (S1) */
+  --space-4: 4px;  --space-8: 8px;  --space-12: 12px; --space-16: 16px; --space-20: 20px; --space-24: 24px;
+  --space-32: 32px; --space-40: 40px; --space-52: 52px; --space-64: 64px; --space-80: 80px; --space-120: 120px;
+
+  /* Layout (L1, S3) */
+  --page-max-width: 1200px;
+  --nav-height: 64px;
+  --card-padding: 12px;
+
+  /* Raios (F1 a F3) */
+  --radius-pill: 9999px;   /* botões, tags, campos */
+  --radius-card: 6px;      /* cartões e imagens */
+  --radius-link: 4px;
+
+  /* Sombra: único token (F6) */
+  --shadow-sm: rgba(0, 0, 0, 0.02) 0px 4px 6px 0px, rgba(0, 0, 0, 0.05) 0px 0px 2px 0px;
+
+  color-scheme: light;
+}
+
+/* Modo escuro: SOMENTE se o ambiente exigir (M6). Inversão estrita, sem cor nova. Registrar como [inferido].
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-obsidian: #ffffff; --color-paper: #000000; --color-ash: #1a1a1a;
+    --color-graphite: #a8a8a8; --color-smoke: #7a7a7a;
+    --color-hairline: #ffffff29; --color-whisper: #ffffff14; --color-brand: #3b82f6; --color-brand-hover: #60a5fa; --color-brand-subtle: rgba(59, 130, 246, 0.15); --color-brand-border: rgba(59, 130, 246, 0.4); --color-brand-contrast: #ffffff;
+    color-scheme: dark;
+  }
+}
+*/
